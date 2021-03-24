@@ -1,8 +1,21 @@
 {
     "name": "dfreer/zillow",
-    "description": "Laravel 5 Zillow api wrapper. This code is a fork from vinceg/zillow",
+    "description": "Laravel 8 Zillow api wrapper. This code is a fork from dfreer/zillow which is a fork from vinceg/zillow",
     "keywords": ["zillow", "php", "api"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/andrewtweber/Goutte.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        {
+            "packagist": false
+        }
+    ],
     "authors": [
         {
             "name": "Derek Freer",
@@ -14,9 +27,9 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "guzzlehttp/guzzle": "5.3|~6.0",
-        "fabpot/goutte": "^3.1"
+        "php": "^7.0|^8.0",
+        "guzzlehttp/guzzle": "^7.0.0",
+        "fabpot/goutte": "dev-master#c814103"
     },
     "autoload": {
         "psr-4": {
