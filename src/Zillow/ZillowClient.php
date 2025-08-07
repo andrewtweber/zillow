@@ -12,8 +12,8 @@
 namespace Zillow;
 
 use GuzzleHttp\Client as GuzzleClient;
-use Goutte\Client as GoutteClient;
 use GuzzleHttp\ClientInterface as GuzzleClientInterface;
+use Symfony\Component\BrowserKit\HttpBrowser;
 use Zillow\ZillowException;
 
 /**
@@ -209,7 +209,7 @@ class ZillowClient
      */
     public function GetPhotos($uri) {
         $this->photos = [];
-        $client = new GoutteClient;
+        $client = new HttpBrowser;
         $crawler = $client->request('GET', $uri);
 
         // Get the latest post in this category and display the titles

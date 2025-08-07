@@ -28,8 +28,8 @@
     ],
     "require": {
         "php": "^8.2",
-        "guzzlehttp/guzzle": "^7.0.0",
-        "fabpot/goutte": "^4.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "symfony/browser-kit": "^7.3"
     },
     "autoload": {
         "psr-4": {
